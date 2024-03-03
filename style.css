@@ -20,6 +20,7 @@ body {
   background-color: hsl(47, 88%, 63%);
   font-family: "figtree";
   font-weight: 500;
+  margin: 0;
 }
 
 .card {
@@ -27,15 +28,18 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
   border: 0.5px solid hsl(0, 0%, 7%);
+  max-width: 400px;
+  margin: 20vh auto;
   padding: 25px;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  box-shadow: 5px 5px hsl(0, 0%, 7%);
+  /* margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh; */
+  box-shadow: 8px 8px hsl(0, 0%, 7%);
   .img img {
     border-radius: 15px;
     width: 100%;
+    margin-bottom: 0.8rem;
   }
   .tag {
     display: inline-block;
@@ -43,25 +47,39 @@ body {
     border-radius: 5px;
     background-color: hsl(47, 88%, 63%);
     padding: 5px;
+    margin-bottom: 1rem;
   }
   .main h1 {
     font-weight: 800;
-    font-size: x-large;
+    font-size: larger;
   }
   .main p {
     color: hsl(0, 0%, 50%);
+    font-size: 14px;
+    margin-bottom: 1rem;
   }
 }
 
 .creator {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1rem;
+
   .creator-img {
-    display: inline;
+    width: 3rem;
+    align-self: left;
   }
   h2 {
-    display: inline;
+    display: inline-flex;
     font-size: large;
     font-weight: 800;
-    margin-left: 25px;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    margin: 20vh auto;
   }
 }
